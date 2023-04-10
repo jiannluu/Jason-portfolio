@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "jsx": "react",
+        "module": "CommonJS",
+        "esModuleInterop": true,
+        "noImplicitAny": true, //no using any or guessing implicitly
+        "removeComments": true, //reduces bundle size
+        "sourceMap": true,
+        "preserveConstEnums": true,
+        "strictNullChecks": true
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules"]
+}
