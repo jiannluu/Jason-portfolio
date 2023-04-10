@@ -1,0 +1,10 @@
+//apply the `preset-env` transform
+
+{
+    "presets": [
+        "@babel/preset-env",
+        ["@babel/preset-react", {
+            "runtime": "automatic"
+        }]
+    ]
+}
