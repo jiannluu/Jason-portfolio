@@ -1,8 +1,15 @@
 import React from 'react'
+import Navbar from './components/Navbar'
+import Frontpage from './components/Frontpage'
 
 const App = (): JSX.Element => {
   return (
-    <h1>Hello World</h1>
+    <>
+        <Navbar />
+        <div>
+            <Frontpage />
+        </div>
+    </>
   )
 }
 
