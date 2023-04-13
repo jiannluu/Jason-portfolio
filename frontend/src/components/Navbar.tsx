@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { IoReorderThree, IoClose } from 'react-icons/io5'
 import { IconContext } from 'react-icons'
-import logo from '../assets/logo.png'
 
 const Navbar = (): JSX.Element => {
   // menuStatus keeps track of if the dropdown menu is currently open
@@ -13,31 +12,31 @@ const Navbar = (): JSX.Element => {
     // toggle menuStatus state
     menuStatus ? setMenuStatus(false) : setMenuStatus(true)
     // toggle dropdown menu
-    dropMenu?.classList.toggle('top-[9%]')
+    dropMenu?.classList.toggle('top-[calc(98%)]')
   }
 
   return (
         // navbar responsive to mobile view
-        <div className='flex justify-between p-2.5 items-center w-[92%] mx-auto'>
-            <a className='cursor-pointer hover:animate-spin transition-transform 0.12s'>
-                <img src={logo} alt='logo' className='w-[4em]'/>
+        <div className='flex justify-between w-[100%] p-2.5 items-center bg-white bg-opacity-50'>
+            <a href='#' className="relative h-9 w-9 flex justify-center items-center ml-[4%] border-2 before:absolute before:-bottom-2 before:-right-2 before:h-4 before:w-4 before:border-b-2 before:border-r-2 before:border-gray-900 before:transition-all before:duration-300 before:ease-in-out after:absolute after:-top-2 after:-left-2 after:h-4 after:w-4 after:border-t-2 after:border-l-2 after:border-gray-900 after:transition-all after:duration-300 after:ease-in-out hover:before:h-[calc(100%+16px)] hover:before:w-[calc(100%+16px)] hover:after:h-[calc(100%+16px)] hover:after:w-[calc(100%+16px)] m-2 cursor-pointer">
+                <h1 className="font-bold text-gray-900">JL</h1>
             </a>
 
             {/* hover effect for navbar links */}
-            <div className="md:static absolute md:min-h-fit min-h-[35vh] bg-white left-0 top-[-100%] md:w-auto w-full flex items-center px-5 z-30 ease-in-out duration-500" id="drop-menu">
+            <div className="md:static absolute md:min-h-fit min-h-[35vh] left-0 top-[-535%] md:w-auto w-full flex items-center px-5 bg-white md:bg-transparent z-30 ease-in-out duration-500" id="drop-menu">
                 <ul className='flex md:flex-row flex-col md:items-center md:gap-3.5 gap-8'>
                     <li className="ml-7 mr-7 pl-1 pr-1 md:font-medium text-lg text-gray-900 relative group cursor-pointer">
-                        <span>About Me</span>
+                        <a href="#about-me">About Me</a>
                         <span className="md:absolute -bottom-1 left-1/2 w-0 h-1 bg-gray-700 group-hover:w-1/2 group-hover:transition-all"></span>
                         <span className="md:absolute -bottom-1 right-1/2 w-0 h-1 bg-gray-700 group-hover:w-1/2 group-hover:transition-all"></span>
                     </li>
                     <li className="ml-7 mr-7 pl-1 pr-1 md:font-medium text-lg text-gray-900 relative group cursor-pointer">
-                        <span>Skills</span>
+                        <a href="#skills">Skills</a>
                         <span className="md:absolute -bottom-1 left-1/2 w-0 h-1 bg-gray-700 group-hover:w-1/2 group-hover:transition-all"></span>
                         <span className="md:absolute -bottom-1 right-1/2 w-0 h-1 bg-gray-700 group-hover:w-1/2 group-hover:transition-all"></span>
                     </li>
                     <li className="ml-7 mr-7 pl-1 pr-1 md:font-medium text-lg text-gray-900 relative group cursor-pointer">
-                        <span>Projects</span>
+                        <a>Projects</a>
                         <span className="md:absolute -bottom-1 left-1/2 w-0 h-1 bg-gray-700 group-hover:w-1/2 group-hover:transition-all"></span>
                         <span className="md:absolute -bottom-1 right-1/2 w-0 h-1 bg-gray-700 group-hover:w-1/2 group-hover:transition-all"></span>
                     </li>
@@ -50,7 +49,7 @@ const Navbar = (): JSX.Element => {
             </div>
 
             {/* hover effect for contact me button */}
-            <a href="#_" className="hidden relative md:inline-block text-lg group">
+            <a href="#_" className="hidden relative md:inline-block text-lg group mr-[4%]">
                 <span className="relative z-10 block px-5 py-3 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
                     <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
                     <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-gray-900 group-hover:-rotate-180 ease"></span>
@@ -61,7 +60,7 @@ const Navbar = (): JSX.Element => {
 
             {/* menu and menuclose button on mobile view */}
             <IconContext.Provider value={{ size: '2em' }}>
-                <button className="md:hidden z-50 bg-white" onClick={onToggleMenu}>
+                <button className="md:hidden z-50" onClick={onToggleMenu}>
                     {/* dynamically change menu to close icon based on state to see if the menu is open or closed */}
                     {
                         menuStatus ? <IoClose /> : <IoReorderThree />
