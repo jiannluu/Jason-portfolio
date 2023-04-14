@@ -24,7 +24,7 @@ const Aboutme = (): JSX.Element => {
                         <br></br>
                         <br></br>
                         When I&apos;m not glued to my seat in front of my computer you can find me bouldering up a storm at the nearest climbing gym.
-                        I find that scaling walls and solving problems with my body is the perfect complement to my verebal work as a developer.
+                        I find that scaling walls and solving problems with my body is the perfect complement to my cerebal work as a developer.
                     </h1>
                 </div>
             </div>

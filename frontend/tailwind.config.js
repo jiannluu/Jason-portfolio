@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin')
+
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
 
@@ -33,5 +35,10 @@ module.exports = {
       }
     }
   },
-  plugins: []
+  plugins: [
+    // adding current variant to have the component stay as active
+    plugin(function ({ addVariant }) {
+      addVariant('current', '&.active')
+    })
+  ]
 }
