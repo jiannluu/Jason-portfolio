@@ -10,3 +10,9 @@
 html {
     scroll-behavior: smooth;
 }
+
+@media only screen and (min-width: 250px) {
+    .tech-icons {
+      font-size: 2vh;
+    }
+  }

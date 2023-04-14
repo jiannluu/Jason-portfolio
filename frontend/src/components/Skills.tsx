@@ -82,26 +82,26 @@ const Skills = (): JSX.Element => {
 
   return (
     <div className="h-screen bg-white" id="skills">
-        <h1 className="text-center text-gray-900 font-bold text-2xl xxs:text-4xl md:text-5xl lg:text-6xl pt-[40%] xxs:pt-[25%] pb-[8%] sm:pt-[20%] sm:pb-[6%] md:pt-[17%] md:pb-[2%] lg:pt-[12%] lg:pb-[5%] xl:pt-[8%] ease-in-out">
+        <h1 className="text-center text-gray-900 font-bold text-2xl xxs:text-4xl md:text-5xl lg:text-6xl pt-[30%] xxs:pt-[25%] pb-[8%] sm:pt-[20%] sm:pb-[6%] md:pt-[17%] md:pb-[2%] lg:pt-[12%] lg:pb-[5%] xl:pt-[8%] ease-in-out">
             Skills
         </h1>
-        <div className="flex flex-row justify-around">
-            <div className="flex flex-col items-center cursor-pointer group" onClick={() => { clickHandler('frontend') }}>
-                <img src={waiter} className="w-[150px] h-[150px] duration-150 group-hover:scale-[135%] group-hover:duration-150 group-active:grayscale-0 group-active:scale-125 active current:grayscale" id="waiter"/>
-                <strong className="text-center lg:text-xl mt-8 hidden group-hover:inline-block" id="waiter-text">Waiter (Frontend)</strong>
+        <div className="flex flex-row justify-around mt-[2vh]">
+            <div className="flex flex-col flex-1 items-center cursor-pointer group" onClick={() => { clickHandler('frontend') }}>
+                <img src={waiter} className="w-[20vw] h-[20vw] lg:w-[150px] lg:h-[150px] duration-150 lg:group-hover:scale-[135%] lg:group-hover:duration-150 group-active:grayscale-0 lg:group-active:scale-125 active current:grayscale" id="waiter"/>
+                <strong className="text-center lg:text-xl mt-[3vh] hidden lg:group-hover:inline-block" id="waiter-text">Waiter (Frontend)</strong>
             </div>
-            <div className="flex flex-col items-center cursor-pointer group" onClick={() => { clickHandler('backend') }}>
-                <img src={chef} className="w-[150px] h-[150px] duration-150 group-hover:scale-[135%] group-hover:duration-150 group-active:grayscale-0 group-active:scale-125 active current:grayscale" id="chef"/>
-                <strong className="text-center lg:text-xl mt-8 hidden group-hover:inline-block" id="chef-text">Chef (Backend)</strong>
+            <div className="flex flex-col flex-1 items-center cursor-pointer group" onClick={() => { clickHandler('backend') }}>
+                <img src={chef} className="w-[20vw] h-[20vw] lg:w-[150px] lg:h-[150px] duration-150 lg:group-hover:scale-[135%] lg:group-hover:duration-150 group-active:grayscale-0 lg:group-active:scale-125 active current:grayscale" id="chef"/>
+                <strong className="text-center lg:text-xl mt-[3vh] hidden lg:group-hover:inline-block" id="chef-text">Chef (Backend)</strong>
             </div>
-            <div className="flex flex-col items-center cursor-pointer group" onClick={() => { clickHandler('tools') }}>
-                <img src={shipment} className="w-[150px] h-[150px] duration-150 group-hover:scale-[135%] group-hover:duration-150 group-active:grayscale-0 group-active:scale-125 active current:grayscale" id="supplier"/>
-                <strong className="text-center lg:text-xl mt-8 hidden group-hover:inline-block" id="supplier-text">Suppliers (Tools/DB)</strong>
+            <div className="flex flex-col flex-1 items-center cursor-pointer group" onClick={() => { clickHandler('tools') }}>
+                <img src={shipment} className="w-[20vw] h-[20vw] lg:w-[150px] lg:h-[150px] duration-150 lg:group-hover:scale-[135%] lg:group-hover:duration-150 group-active:grayscale-0 lg:group-active:scale-125 active current:grayscale" id="supplier"/>
+                <strong className="text-center lg:text-xl mt-[3vh] hidden lg:group-hover:inline-block" id="supplier-text">Suppliers (Tools/DB)</strong>
             </div>
         </div>
         {
           displayDefault
-            ? <h1 className="absolute bottom-[20%] text-center mx-[15vh] lg:text-xl">
+            ? <h1 className="mt-[5vh] mx-[5vw] text-[2.2vh] xxs:text-[2.5vh] absolute bottom-[15vh] xxs:bottom-[13vh] lg:bottom-[15vh] text-center lg:mx-[15vh] lg:text-xl">
                 Software development is like running a restaurant: both require careful planning, attention to detail, and the ability to adapt to changing tastes.
                 And just like how a dish needs the perfect blend of spices to make it delicious, an app needs the perfect combination of design and functionality to make it a hit with users.
                 <br></br>
@@ -112,43 +112,43 @@ const Skills = (): JSX.Element => {
         }
         {
           displayFrontend
-            ? <div className="absolute bottom-[10%] w-screen flex flex-row flex-wrap">
+            ? <div className="absolute bottom-[12vh] lg:bottom-[10%] w-screen flex flex-row flex-wrap">
                 <IconContext.Provider value={({ size: '3em' })}>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <SiTypescript />
-                    <h1>TypeScript</h1>
+                    <SiTypescript className="tech-icons"/>
+                    <h1 className="text-[2vh]">TypeScript</h1>
                   </div>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <SiHtml5 />
-                    <h1>HTML</h1>
+                    <SiHtml5 className="tech-icons"/>
+                    <h1 className="text-[2vh]">HTML</h1>
                   </div>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <SiCss3 />
-                    <h1>CSS</h1>
+                    <SiCss3 className="tech-icons"/>
+                    <h1 className="text-[2vh]">CSS</h1>
                   </div>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <SiReact />
-                    <h1>React</h1>
+                    <SiReact className="tech-icons"/>
+                    <h1 className="text-[2vh]">React</h1>
                   </div>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <SiReact />
-                    <h1>React Native</h1>
+                    <SiReact className="tech-icons"/>
+                    <h1 className="text-[2vh] text-center">React Native</h1>
                   </div>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <SiSvelte />
-                    <h1>Svelte</h1>
+                    <SiSvelte className="tech-icons"/>
+                    <h1 className="text-[2vh]">Svelte</h1>
                   </div>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <SiRedux />
-                    <h1>Redux</h1>
+                    <SiRedux className="tech-icons"/>
+                    <h1 className="text-[2vh]">Redux</h1>
                   </div>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <TbBrandNextjs />
-                    <h1>Next.js</h1>
+                    <TbBrandNextjs className="tech-icons"/>
+                    <h1 className="text-[2vh]">Next.js</h1>
                   </div>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <SiTailwindcss />
-                    <h1>Tailwind CSS</h1>
+                    <SiTailwindcss className="tech-icons"/>
+                    <h1 className="text-[2vh] text-center">Tailwind CSS</h1>
                   </div>
                 </IconContext.Provider>
               </div>
@@ -156,15 +156,15 @@ const Skills = (): JSX.Element => {
         }
         {
           displayBackend
-            ? <div className="absolute bottom-[18%] w-screen flex flex-row flex-wrap">
+            ? <div className="absolute bottom-[27%] lg:bottom-[18%] w-screen flex flex-row flex-wrap">
                 <IconContext.Provider value={({ size: '3em' })}>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <FaNode />
-                    <h1>Node.js</h1>
+                    <FaNode className="tech-icons"/>
+                    <h1 className="text-[2vh]">Node.js</h1>
                   </div>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <SiExpress />
-                    <h1>Express</h1>
+                    <SiExpress className="tech-icons"/>
+                    <h1 className="text-[2vh]">Express</h1>
                   </div>
                 </IconContext.Provider>
               </div>
@@ -172,23 +172,23 @@ const Skills = (): JSX.Element => {
         }
         {
           displayTools
-            ? <div className="absolute bottom-[18%] w-screen flex flex-row flex-wrap">
+            ? <div className="absolute bottom-[24%] lg:bottom-[18%] w-screen flex flex-row flex-wrap">
                 <IconContext.Provider value={({ size: '3em' })}>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <SiWebpack />
-                    <h1>Webpack</h1>
+                    <SiWebpack className="tech-icons"/>
+                    <h1 className="text-[2vh]">Webpack</h1>
                   </div>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <SiVite />
-                    <h1>Vite</h1>
+                    <SiVite className="tech-icons"/>
+                    <h1 className="text-[2vh]">Vite</h1>
                   </div>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <SiMongodb />
-                    <h1>MongoDB</h1>
+                    <SiMongodb className="tech-icons"/>
+                    <h1 className="text-[2vh]">MongoDB</h1>
                   </div>
                   <div className="flex flex-col flex-1 justify-center items-center mx-[5vw] my-[2vh]">
-                    <SiPostgresql />
-                    <h1>PostgreSQL</h1>
+                    <SiPostgresql className="tech-icons"/>
+                    <h1 className="text-[2vh]">PostgreSQL</h1>
                   </div>
                 </IconContext.Provider>
               </div>
