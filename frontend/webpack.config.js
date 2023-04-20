@@ -27,9 +27,8 @@ module.exports = {
                 exclude: /node_modules/,
             },
             {
-                test: /\.css$/i,
-                include: path.resolve(__dirname, "src"),
-                use: ["style-loader", "css-loader", "postcss-loader"]
+                test: /\.(sass|less|css)$/i,
+                use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
             },
             {
                 test: /\.(png|jpe?g|gif)$/i,

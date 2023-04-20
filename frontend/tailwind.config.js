@@ -18,9 +18,12 @@ module.exports = {
         'blob-shadow': '0px 0px 15px rgba(0, 0, 0, 0.2)'
       },
       animation: {
-        'blob-smooth': 'blob 3.7s linear infinite'
+        'blob-smooth': 'blob 3.7s linear infinite',
+        'bounce-left': 'bounceLeft 1s infinite',
+        'bounce-right': 'bounceRight 1s infinite'
       },
       keyframes: {
+        // blob animation keyframes
         blob: {
           '0%, 100%': {
             borderRadius: '42% 56% 72% 28% / 42% 42% 56% 48%'
@@ -30,6 +33,24 @@ module.exports = {
           },
           '66%': {
             borderRadius: '100% 56% 56% 100% / 100% 100% 56% 56%'
+          }
+        },
+        // bounce left animation keyframes
+        bounceLeft: {
+          '0%, 100%': {
+            transform: 'translateX(-25%)'
+          },
+          '50%': {
+            transform: 'translateX(0)'
+          }
+        },
+        // bounce right animation key frames
+        bounceRight: {
+          '0%, 100%': {
+            transform: 'translateX(25%)'
+          },
+          '50%': {
+            transform: 'translateX(0)'
           }
         }
       }
