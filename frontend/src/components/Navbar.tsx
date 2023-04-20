@@ -36,7 +36,7 @@ const Navbar = (): JSX.Element => {
                         <span className="md:absolute -bottom-1 right-1/2 w-0 h-1 bg-gray-700 group-hover:w-1/2 group-hover:transition-all"></span>
                     </li>
                     <li className="ml-7 mr-7 pl-1 pr-1 md:font-medium text-lg text-gray-900 relative group cursor-pointer">
-                        <a>Projects</a>
+                        <a href="#projects">Projects</a>
                         <span className="md:absolute -bottom-1 left-1/2 w-0 h-1 bg-gray-700 group-hover:w-1/2 group-hover:transition-all"></span>
                         <span className="md:absolute -bottom-1 right-1/2 w-0 h-1 bg-gray-700 group-hover:w-1/2 group-hover:transition-all"></span>
                     </li>
