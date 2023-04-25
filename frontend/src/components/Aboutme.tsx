@@ -7,7 +7,7 @@ const Aboutme = (): JSX.Element => {
   return (
         <div className="h-screen bg-[#01313f]">
             <h1 className=" text-center text-white font-bold text-2xl xxs:text-4xl md:text-5xl lg:text-6xl pt-[40%] xxs:pt-[25%] pb-[8%] sm:pt-[20%] sm:pb-[6%] md:pt-[17%] md:pb-[2%] lg:pt-[12%] lg:pb-[5%] xl:pt-[8%] ease-in-out duration 500s">
-                About Me
+                <span className='underline underline-offset-8 decoration-[#00b2df]'>A</span>bout Me
             </h1>
             <div className="flex flex-col md:flex-row justify-around items-center h-100% ease-in-out duration 500s">
                 {/* my cartoon photo with blob effect */}

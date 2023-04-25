@@ -23,7 +23,9 @@ const ProjectsPage = (): JSX.Element => {
   return (
         <div className="h-screen bg-[#01313f]">
             <div className="max-w-[124rem] h-[100%] py-[4rem] px-[1rem] my-0 mx-auto">
-                <h1 className="py-[1rem] pt-[3rem] px-0 text-2xl xxs:text-4xl md:text-5xl lg:text-6xl text-center text-white font-bold">Projects</h1>
+                <h1 className="py-[1rem] pt-[3rem] px-0 text-2xl xxs:text-4xl md:text-5xl lg:text-6xl text-center text-white font-bold">
+                    <span className='underline underline-offset-8 decoration-[#00b2df]'>P</span>rojects
+                </h1>
                     {/* imported swiper card library */}
                     <Swiper
                         // setting card effect and how the cards are position
