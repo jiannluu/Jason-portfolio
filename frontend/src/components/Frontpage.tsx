@@ -10,10 +10,10 @@ const Frontpage = (): JSX.Element => {
             <div className="flex flex-col items-center mt-[24vh] xs:mt-0 xs:absolute xs:left-[4%] xs:top-[25%] z-10 ease-in-out duration-500">
                 {/* short description about me */}
                 <h1 className="text-3xl xxs:text-4xl sm:text-5xl lg:text-6xl 2xl:text-7xl font-bold mb-3 md:mb-7 text-gray-900 ease-in-out duration-500 z-10">
-                  <span className="text-[#00b2df]">Hi!</span> I&apos;m Jian Cheng
+                  <span className="text-[#00b2df]">Hi! 👋</span> I&apos;m Jian Cheng
                 </h1>
                 <h1 className="text-xl xxs:text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-bold mb-3 md:mb-7 text-gray-900 ease-in-out duration-500 z-10">
-                  I am a <span className="text-[#00b2df]">Fullstack Developer</span>
+                  I am a <span className="text-[#00b2df]">Fullstack Developer 👨‍💻</span>
                 </h1>
                 <div className="flex justify-center mb-7 md:mb-9">
                     <h1 className="text-xl xxs:text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-bold mr-1.5 text-gray-900 ease-in-out duration-500 z-10">

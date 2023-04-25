@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin")
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
     entry: "./src/index.tsx",
@@ -10,7 +11,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: path.join(__dirname, "./src/index.html")
-        })
+        }),
+        new Dotenv()
     ],
     devServer: {
         static: {
@@ -38,6 +40,6 @@ module.exports = {
     },
     // pass all js files through Babel
     resolve: {
-        extensions: ["*", ".js", ".jsx", ".tsx", ".ts"]
+        extensions: [".*", ".js", ".jsx", ".tsx", ".ts"]
     }
 }

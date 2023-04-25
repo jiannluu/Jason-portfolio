@@ -83,7 +83,7 @@ const Skills = (): JSX.Element => {
   return (
     <div className="h-screen bg-white">
         <h1 className="text-center text-gray-900 font-bold text-2xl xxs:text-4xl md:text-5xl lg:text-6xl pt-[30%] xxs:pt-[25%] pb-[8%] sm:pt-[20%] sm:pb-[6%] md:pt-[17%] md:pb-[2%] lg:pt-[12%] lg:pb-[5%] xl:pt-[8%] ease-in-out">
-            Skills
+          <span className='underline underline-offset-8 decoration-[#00b2df]'>S</span>kills
         </h1>
         <div className="flex flex-row justify-around mt-[2vh]">
             <div className="flex flex-col flex-1 items-center cursor-pointer group" onClick={() => { clickHandler('frontend') }}>
