@@ -23,21 +23,18 @@ const Navbar = (): JSX.Element => {
 
   const scrollToAbout = (): void => {
     const windowHeight = window.innerHeight
-    console.log(windowHeight)
     window.scrollTo(0, (windowHeight + 584))
     onToggleMenu()
   }
 
   const scrollToSkill = (): void => {
     const windowHeight = window.innerHeight
-    console.log(windowHeight)
     window.scrollTo(0, (windowHeight * 2 + 1334))
     onToggleMenu()
   }
 
   const scrollToProjects = (): void => {
     const windowHeight = window.innerHeight
-    console.log(windowHeight)
     window.scrollTo(0, (windowHeight * 3 + 2084))
     onToggleMenu()
   }
