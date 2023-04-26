@@ -8,8 +8,6 @@ import 'react-toastify/dist/ReactToastify.css'
 const Contact = (): JSX.Element => {
   const form = useRef<HTMLFormElement>(null)
 
-  console.log(process.env.SERVICE_ID, process.env.TEMPLATE_ID, process.env.PUBLIC_KEY)
-
   const sendEmail = (e: any): void => {
     e.preventDefault()
 
